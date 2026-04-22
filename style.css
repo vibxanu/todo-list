@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+#task-input, #due-date, #priority {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+#task-input { flex: 1; }
+
+#add-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+.filters {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.filters button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: 0.3s;
+}
+
+.filters button.active, .filters button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+li.completed { text-decoration: line-through; color: gray; opacity: 0.7; }
+
+li:hover { transform: scale(1.02); }
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.priority-high { border-left: 5px solid #e74c3c; }
+.priority-medium { border-left: 5px solid #f1c40f; }
+.priority-low { border-left: 5px solid #2ecc71; }
+
+button.delete-btn {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.delete-btn:hover { background-color: #e04343; }
+
+#clear-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff7675;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#clear-btn:hover { background-color: #e55050; }
