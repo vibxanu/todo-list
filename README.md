@@ -11,6 +11,7 @@ A simple Todo List web application built with HTML, CSS, and JavaScript.
 
 ## 📸 Screenshots
 ![Home](images/home.png)
+![Add Task](images/add-task.png)
 
 ## 🛠 Tech Stack
 - HTML
